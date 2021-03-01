@@ -13,7 +13,7 @@ class HomeController extends BaseController
      */
     public function index()
     {
-        $forRender = parent::renderDefault();//inheritance method of BaseController
-        return $this->render("main/index.html.twig",$forRender);
+        $forRender = BaseController::renderDefault();//inheritance method of BaseController
+        return $this->render( "main/index.html.twig",$forRender);
     }   
 }

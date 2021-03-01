@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class BaseController extends AbstractController
 {
-    public function renderDefault()
+    protected function renderDefault()
     {
         return [
             'title' => 'Home Page'
